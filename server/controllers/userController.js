@@ -42,7 +42,6 @@ class UserController {
         }
 
         let comparePassword = bcrypt.compareSync(password, user.password)
-        console.log('comparePassword: ', comparePassword)
 
         if (!comparePassword) {
             return next(ApiError.badRequest('Incorrect password'))
