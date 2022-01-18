@@ -11,7 +11,11 @@ class UserController {
     }
 
     async check(req, res, next) {
-
+        /*const {id} = req.query
+        if (!id) {
+            return next(ApiError.badRequest('ID not set'))
+        }
+        res.json(id)*/
     }
 }
 
